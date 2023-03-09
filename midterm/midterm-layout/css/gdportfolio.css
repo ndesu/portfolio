@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Palanquin+Dark:wght@600;700&family=Gelasio:ital,wght@1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Palanquin Dark', sans-serif;
+}
+
+body {
+	background-image: url("../background.png");
+	background-attachment: fixed;
+}
+
+.clearfix::after {
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	content: '';
+	visibility: hidden;
+}
+
+header {
+	width: 100%;
+	line-height: 0px;
+	position: fixed;
+}
+
+.spacer {
+	width: 100%;
+	height: 80px;
+}
+
+.logo {
+	float: left;
+	margin: 10px;
+	width: 20%;
+}
+
+.logo img {
+	width: 60px;
+}
+
+h1 {
+	float: left;
+	text-align: center;
+	width: 48%;
+	margin-top: 20px;
+	padding: 10px;
+	font-size: 50px;
+	color: #134e3e;
+}
+
+nav ul {
+	float: right;
+	list-style-type: none;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #34252f;
+	font-size: 17px;
+	line-height: 50px;
+}
+
+li a:hover {
+	color: #ffffff;
+}
+
+.description {
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin: 30px 330px;
+	color: #34252f;
+	background-color: rgba(195, 205, 255, 0.8);
+	padding: 10px 10px;
+	border-radius: 20px;
+	position: fixed;
+}
+
+.portfolio {
+	display: flex;
+	align-items: center;
+	margin: 30px;
+
+}
+
+.portfolio .item {
+	border: 6px solid #134e3e;
+	margin: 10px;
+	background-color: rgba(167, 132, 109, 0.7);
+	padding: 10px;
+	height: 550px;
+}
+
+.portfolio .item img {
+	width: auto;
+	height: 500px;
+	border-radius: 10px;
+
+}
+
+.portfolio .caption {
+	text-align: center;
+	font-size: 22px;
+	line-height: 20px;
+	color: #34252f;
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		max-width: 100%;
+		position: fixed;
+		display: flex;
+		align-items: center;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 30px;
+		margin-top: 20px;
+	}
+
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+		float: left;
+	}
+
+	li a {
+		display: block;
+		text-align: center;
+		padding: 0px 3px;
+		text-decoration: none;
+		color: #34252f;
+		font-size: 15px;
+		line-height: 50px;
+	}
+
+	.logo {
+		margin: 0;
+		margin-left: 10px;
+		margin-top: 15px;
+		float: left;
+	}
+
+	.logo img {
+		width: 50px;
+	}
+
+	.portfolio {
+		flex-direction: column;
+		margin-bottom: 70px;
+	}
+
+	.description {
+		font-size: 14px;
+		line-height: 15px;
+		margin: 40px 10px;
+	}
+
+	.portfolio .item {
+		padding: 5px;
+		max-width: 340px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.portfolio .caption {
+		font-size: 18px;
+	}
+
+}
+
